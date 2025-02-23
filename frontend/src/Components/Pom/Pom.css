@@ -1,0 +1,244 @@
+/* -------------------------- */
+/*       Global Variables     */
+/* -------------------------- */
+
+:root {
+  --font-size-large: 24vw;
+  --font-size-medium: 5vw;
+  --font-size-small: 3vw;
+  --line-height: 1.1;
+  --font-family: "Hind", serif;
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+  --gradient: linear-gradient(90deg, #eef4eb, #d1e8c8);
+  --shadow-color: #00000006;
+  --body-start: 40vw;
+  --title-y: 21vw;
+  --title-x: 8vw;
+}
+
+.no-select {
+  user-select: none; /* Prevents text selection */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+/* -------------------------- */
+/*       Base Text Style      */
+/* -------------------------- */
+
+.text {
+  font-size: var(--font-size-large);
+  line-height: var(--line-height);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-light);
+  font-style: normal;
+  
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  position: absolute;
+}
+
+/* -------------------------- */
+/*         Title Styles       */
+/* -------------------------- */
+
+/* Gradient title with outline and shadow */
+.title {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  position: absolute;
+  top: var(--title-y);
+  left: calc(var(--title-x) - 40vw); /* Start off-screen */
+  animation: title-one-slide 2s ease-out forwards;
+}
+
+.title-rim {
+  color: #a4bc9a6f;
+  top: calc(var(--title-y) + 0.05vw);
+  left: calc(var(--title-x) + 0.05vw);
+  z-index: -1;
+}
+
+/* Fake text-shadow using ::after */
+.title::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  color: var(--shadow-color);
+  filter: blur(4px);
+  z-index: -1;
+}
+
+/* part of title */
+.of {
+  color: #ffffff;
+  top: calc(var(--body-start) + 1vw);
+  left: -8vw;
+  opacity: 0.6;
+}
+
+/* part of title with outline */
+.mind {
+  color: #ffffff;
+  top: calc(var(--body-start) + 1vw);
+  left: 20vw;
+}
+
+.mind-rim {
+  color: #a4bc9a6f;
+  top: calc(var(--body-start) + 0.95vw);
+  left: 19.95vw;
+}
+
+/* gradient background */
+.body {
+  background: var(--gradient);
+
+  width: 150vw;
+  height: 300vh;
+  
+  position: absolute;
+  top: var(--body-start);
+  left: 0;
+}
+
+/* title animation */
+.line-1 {
+  animation: title-one-slide 1 2s ease-out forwards;
+}
+
+@keyframes title-one-slide {
+  from { left: calc(var(--title-x) - 40vw); }
+  to { left: var(--title-x); }
+}
+
+.line-2 {
+  animation: title-two-slide 1 2.5s ease-out;
+}
+
+@keyframes title-two-slide {
+  0%    { transform: translateX(-30vw);  
+          opacity: 0.2; 
+        }
+  80%   { opacity: 1;}
+  100%  { transform: translateX(0vw); }
+}
+
+/* container for box and title */
+.body-box {
+  position: relative;
+  display: inline-block;
+}
+
+/* PoM logo */
+.icon {
+  width: 16vw;
+  position: absolute;
+  z-index: 10;
+}
+.green {
+  top: calc(var(--body-start) + 4vw);
+  right: 10vw;
+}
+.rim-light {
+  top: calc(var(--body-start) + 4.05vw);
+  right: 9.95vw;
+}
+.rim-dark {
+  top: calc(var(--body-start) + 3.95vw);
+  right: 10.05vw;
+}
+
+/* icon animation */
+.icon {
+  animation: logo-spin infinite 40s linear;
+  animation-play-state: paused;
+}
+
+@keyframes logo-spin {
+  from  { transform: rotate(0deg); }
+  to    { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo-box:hover .icon {
+    animation-play-state: running;
+  }
+}
+
+/* -------------------------- */
+/*         Body Styles        */
+/* -------------------------- */
+
+/* Body Paragraph Title */
+.textbox {
+  position: absolute;
+  top: max(75vw, 700px);
+  left: 0;
+  width: 100vw;
+
+  padding: 0;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: max(var(--font-size-medium), 40px);
+  line-height: var(--line-height);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-light);
+  font-style: normal;
+  
+  margin: 0px;
+  padding: 0 40px;
+  white-space: normal;
+  text-align: center;
+
+  color: #0008
+}
+
+/* Body Paragraph Fade In */
+.subtitle {
+  opacity: 0;
+  animation: body-title-fade-in 1 0.5s ease-out forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes body-title-fade-in {
+  0%    { transform: translateY(10vw);  opacity: 0; }
+  100%  { transform: translateY(0vw); opacity: 1; }
+}
+
+/* Body Paragraph Content */
+.body-paragraph {
+  font-size: max(var(--font-size-small), 25px);
+  line-height: var(--line-height);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+  font-style: normal;
+  
+  margin: 0px;
+  padding: 40px 70px;
+  white-space: normal;
+  text-align: center;
+
+  color: #0005
+}
+
+/* Body Paragraph Fade In */
+.scroll-trigger {
+  opacity: 0; /* Start hidden */
+  transform: translateY(80px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scroll-trigger.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

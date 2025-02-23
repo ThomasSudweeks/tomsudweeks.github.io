@@ -1,0 +1,18 @@
+.error-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+
+  background-color: rgb(58, 52, 98);
+}
+
+.error-title {
+  color: #FFFFFF99;
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
