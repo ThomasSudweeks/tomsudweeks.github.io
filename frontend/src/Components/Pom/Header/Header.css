@@ -1,0 +1,65 @@
+:root {
+  --font-family: "Hind", serif;
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+}
+
+.no-select {
+  user-select: none; /* Prevents text selection */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.header-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: max(min(7vw, 75px), 50px);
+  width: 100vw;
+
+  display: flex;
+  justify-content: left;
+
+  background-color: #00000011;
+}
+
+.title-box {
+  margin: min(5px, 0.5vw);
+  height: max(min(6vw, 65px), 43.3px);
+  width: max(min(140px, 13vw), 100px);
+
+  display: flex;
+  padding-left: 20px;
+
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+
+  font-size: max(min(48px, 4.5vw), 32px);
+  color: #FFBEBE;
+
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+}
+
+.header-title {
+  padding: 1px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.title-box * {
+  transition: filter 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.title-box:hover .header-title {
+  filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.2));
+}
+
+.title-box:hover h1 {
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}

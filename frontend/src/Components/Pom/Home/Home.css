@@ -10,8 +10,9 @@
   --font-family: "Hind", serif;
   --font-weight-light: 300;
   --font-weight-medium: 500;
-  --gradient: linear-gradient(90deg, #eef4eb, #d1e8c8);
+  --gradient: linear-gradient(90deg, #fbb3b3, #f4ccc6);
   --shadow-color: #00000006;
+  --rim-color: #BB95916f;
   --body-start: 40vw;
   --title-y: 21vw;
   --title-x: 8vw;
@@ -59,7 +60,7 @@
 }
 
 .title-rim {
-  color: #a4bc9a6f;
+  color: var(--rim-color);
   top: calc(var(--title-y) + 0.05vw);
   left: calc(var(--title-x) + 0.05vw);
   z-index: -1;
@@ -81,7 +82,7 @@
   color: #ffffff;
   top: calc(var(--body-start) + 1vw);
   left: -8vw;
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 /* part of title with outline */
@@ -92,7 +93,7 @@
 }
 
 .mind-rim {
-  color: #a4bc9a6f;
+  color: var(--rim-color);
   top: calc(var(--body-start) + 0.95vw);
   left: 19.95vw;
 }
