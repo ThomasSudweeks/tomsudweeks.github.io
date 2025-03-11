@@ -52,6 +52,53 @@ h1 {
   padding-bottom: 8px;
 }
 
+.header-options {
+  margin: min(5px, 0.5vw);
+  height: max(min(6vw, 65px), 43.3px);
+  width: max(min(500px, 50vw), 350px);
+
+  position: fixed;
+  right: 0px;
+
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: max(min(100px, 8vw), 10px);
+
+  padding-right: max(min(40px, 5vw), 20px);
+
+  /* background-color: aquamarine; */
+}
+
+h2 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+
+  font-size: max(min(26px, 3vw), 20px);
+  color: #000000;
+  opacity: 0.6;
+  transition: opacity 0.1s ease-in-out;
+
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-light);
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  top: 0px; bottom: 0px;
+  left: max(-30px, -3vw); 
+  right: max(-30px, -3vw);
+
+  cursor: pointer;
+}
+
+h2:hover {
+  opacity: 0.5; /* Fully visible on hover */
+}
+
 .title-box * {
   transition: filter 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }

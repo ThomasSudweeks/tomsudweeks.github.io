@@ -51,12 +51,14 @@ function Home() {
         <title>PoM</title>
         <link rel="icon" type="image/svg+xml" href="/pom-icon.svg" />
       </Helmet>
+
       {/* PoM Logo */}
       <div className='logo-box no-select'>
-        <img src='./pom-dark.svg' className='icon rim-dark'></img>
-        <img src='./pom-white.svg' className='icon rim-light'></img>
-        <img src='./pom-pink.svg' alt='PoM Logo' className='icon green'></img>
+        <img src='/pom-dark.svg' className='icon rim-dark'></img>
+        <img src='/pom-white.svg' className='icon rim-light'></img>
+        <img src='/pom-pink.svg' alt='PoM Logo' className='icon green'></img>
       </div>
+
       {/* Title Text */}
       <div className='wrapper no-select'>
         <p className='title text line-1' data-text='Peace of Mind'>Peace of Mind</p>
@@ -68,6 +70,7 @@ function Home() {
         <div className='mind text line-2'>Mind</div>
         <div className='of text line-2'>of</div>
       </div>
+
       {/* About Us Paragraph */}
       <div className='textbox'>
         <h1 className='subtitle'>PoM. The Future of Personal Security</h1>

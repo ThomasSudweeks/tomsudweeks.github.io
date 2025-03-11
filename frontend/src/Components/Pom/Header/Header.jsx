@@ -2,7 +2,19 @@ import { useState, useEffect } from 'react';
 import './Header.css';
 
 function redirectToHome() {
-  window.location.href = "/pombuds";
+  window.location.href = '/pombuds';
+}
+
+function redirectToShop() {
+  window.location.href = '/pombuds/shop';
+}
+
+function redirectToSetup() {
+  window.location.href = '/pombuds/setup';
+}
+
+function redirectToAbout() {
+  window.location.href = '/pombuds/about';
 }
 
 function Header() {
@@ -21,13 +33,23 @@ function Header() {
   }, []);
 
   return (
-    <div className='header-box'
+    <div 
+      className='header-box'
       style={{ opacity, transition: 'opacity 0.3s ease-out' }}
     >
+
+      {/* Left-aligned PoM logo */}
       <div className='title-box no-select' onClick={redirectToHome} >
         <h1>P</h1>
-        <img src='./pom-title.svg' className='header-title' alt="Title" />
+        <img src='/pom-title.svg' className='header-title' alt="Title" />
         <h1>M</h1>
+      </div>
+
+      {/* Right-aligned menu options */}
+      <div className='header-options'>
+        <h2 onClick={redirectToShop}>Shop</h2>
+        <h2 onClick={redirectToSetup}>Setup</h2>
+        <h2 onClick={redirectToAbout}>About Us</h2>
       </div>
     </div>
   );
