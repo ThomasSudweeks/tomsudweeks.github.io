@@ -1,0 +1,42 @@
+:root {
+  --font-family: "Hind", serif;
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+}
+
+.no-select {
+  user-select: none; /* Prevents text selection */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.logo-box {
+  margin: min(5px, 0.5vw);
+  height: max(min(36vw, 390px), 26px);
+  width: max(min(140px, 13vw), 100px);
+
+  display: flex;
+  padding-left: 20px;
+
+  cursor: pointer;
+}
+
+.logo-text {
+  margin: 0;
+  padding: 0;
+
+  font-size: max(min(288px, 27vw), 192px);
+  color: #FFBEBE;
+
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+}
+
+.header-title {
+  padding: 1px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  width: max(min(266px, 25vw), 180px);
+}

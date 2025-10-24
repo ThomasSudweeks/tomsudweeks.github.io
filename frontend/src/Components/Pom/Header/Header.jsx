@@ -2,19 +2,19 @@ import { useState, useEffect } from 'react';
 import './Header.css';
 
 function redirectToHome() {
-  window.location.href = '/pombuds';
+  window.location.href = '/pom';
 }
 
 function redirectToShop() {
-  window.location.href = '/pombuds/shop';
+  window.location.href = '/pom/shop';
 }
 
 function redirectToSetup() {
-  window.location.href = '/pombuds/setup';
+  window.location.href = '/pom/setup';
 }
 
 function redirectToAbout() {
-  window.location.href = '/pombuds/about';
+  window.location.href = '/pom/about';
 }
 
 function Header() {

@@ -6,7 +6,7 @@ function Home() {
     <>
       <Helmet>
         <title>Hey There!</title>
-        <link rel="icon" type="image/x-icon" href="resources/128bitWave.ico" />
+        <link rel="icon" type="image/png" href="/128bitWave.png" />
       </Helmet>
       <div className='home-frame'></div>
       <h1 className='home-title'>Welcome!</h1>
