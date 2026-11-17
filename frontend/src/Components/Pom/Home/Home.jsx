@@ -49,14 +49,14 @@ function Home() {
       {/* Set PoM Header */}
       <Helmet>
         <title>PoM</title>
-        <link rel="icon" type="image/svg+xml" href="/pom-icon.svg" />
+        <link rel="icon" type="image/svg+xml" href="/pom/pom-icon.svg" />
       </Helmet>
 
       {/* PoM Logo */}
       <div className='logo-box no-select'>
-        <img src='/pom-dark.svg' className='icon rim-dark'></img>
-        <img src='/pom-white.svg' className='icon rim-light'></img>
-        <img src='/pom-pink.svg' alt='PoM Logo' className='icon green'></img>
+        <img src='/pom/pom-dark.svg' className='icon rim-dark'></img>
+        <img src='/pom/pom-white.svg' className='icon rim-light'></img>
+        <img src='/pom/pom-pink.svg' alt='PoM Logo' className='icon green'></img>
       </div>
 
       {/* Title Text */}

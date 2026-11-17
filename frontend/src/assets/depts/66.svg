@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created for MapSVG plugin: http://mapsvg.com -->
+
+<svg
+   mapsvg:geoViewBox="-5.181900 51.089515 9.560929 41.366975"
+   width="612.3844"
+   height="584.36005"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="66.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:mapsvg="http://mapsvg.com">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.0154378"
+     inkscape:cx="486.24671"
+     inkscape:cy="444.07225"
+     inkscape:window-width="1512"
+     inkscape:window-height="921"
+     inkscape:window-x="0"
+     inkscape:window-y="61"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <path
+     d="m 305.08408,511.95159 1.26,0.7 2.96,-3.22 1.39,0.41 2.3,-1.48 -0.46,-4.13 -0.95,-1.27 0.73,-0.99 6.78,-0.55 9.84,0.85 2.11,-3.43 3.13,-1.24 7.46,4.46 0,0 -0.4,9.76 0.74,6.87 3.72,1.55 -0.75,0.59 2.13,3.96 -3.67,0.52 -1.89,-2.67 -3.06,0.43 -0.83,-0.94 -1.22,1.45 -3.25,-0.14 -2.54,2.63 -1.86,-0.68 -2.44,1.09 -0.95,1.03 0.83,2.57 -3.95,-0.99 -1.93,1.43 -2,-0.41 -2.04,-2.98 -7.31,-2.5 -2.3,1.25 -1.91,-0.44 -2.91,3.43 -3.02,0.58 -1.76,-1.25 -1.49,-4.41 -2.22,0.21 -2.4,-2.13 -3.92,-0.45 0.39,-3.41 2,-1.04 0,0 3.43,-0.35 1.31,-1.97 1.38,0.59 1.66,-0.69 1.01,-2.49 6.87,-0.11 z"
+     title="Pyrénées-Orientales"
+     id="FR-66" />
+</svg>

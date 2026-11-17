@@ -1,0 +1,59 @@
+.dept-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  max-width: calc(100vw - 24px);
+  z-index: 90;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+
+  background: var(--tdf-popup-bg);
+  color: var(--tdf-popup-text);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+
+  /* hidden while it's measured, then shown once positioned */
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.dept-popup.is-placed {
+  visibility: visible;
+  animation: popup-in 0.18s ease-out;
+}
+
+@keyframes popup-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.dept-popup-title { margin: 0 0 0.5rem; font-size: 1.05rem; }
+.dept-popup-text  { margin: 0.6rem 0 0; font-size: 0.9rem; line-height: 1.4; }
+
+.dept-popup-images {
+  --popup-image-height: 140px;
+  --fade-width: 32px;
+
+  position: relative;          /* anchors the overlay */
+  display: flex;
+  gap: 6px;
+  height: var(--popup-image-height);
+  overflow: hidden;
+}
+
+/* fade overlay, only shown when images are actually cut off */
+.dept-popup-images.is-clipped::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: var(--fade-width);
+  background: linear-gradient(to right, transparent, color-mix(in srgb, var(--popup-bg) 90%, transparent));
+  /* background: linear-gradient(to right, transparent, var(--popup-bg)); */
+  pointer-events: none;
+}
+
+.dept-popup-image {
+  border-radius: 6px;
+}

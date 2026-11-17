@@ -1,0 +1,63 @@
+
+/* Hide native scrollbar */
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scrollbar track */
+.custom-scrollbar-track {
+  position: fixed;
+  top: 7vh;
+  right: 0;
+
+  width: 12px;
+  height: 93vh;
+
+  z-index: 999;
+  background: transparent;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 0.3s ease;
+}
+
+/* Show scrollbar */
+.custom-scrollbar-track.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Scrollbar thumb */
+.custom-scrollbar-thumb {
+  position: absolute;
+  top: 5px;
+  right: 2px;
+
+  width: 6px;
+
+  border-radius: 10px;
+  background: rgba(201, 214, 226, 0.5);
+
+  cursor: grab;
+  touch-action: none;
+
+  transition:
+    background 0.2s ease,
+    width 0.2s ease;
+}
+
+/* Hover effect */
+.custom-scrollbar-track:hover .custom-scrollbar-thumb {
+  width: 8px;
+  background: rgba(201, 214, 226, 0.8);
+}
+
+/* Dragging */
+.custom-scrollbar-thumb:active {
+  cursor: grabbing;
+}

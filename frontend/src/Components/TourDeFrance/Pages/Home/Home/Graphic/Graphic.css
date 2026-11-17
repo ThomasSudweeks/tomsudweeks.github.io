@@ -1,0 +1,36 @@
+.map-container {
+  /* the three colors and the gap: change these in one place */
+  --dept-fill: #c9d6e2;
+  --dept-hover: #b1bdda;
+  --dept-selected: #d63f3f;
+  --dept-gap: 0.5px;   /* gap between shapes = 2x this, in map units */
+
+  width: 100%;
+  max-width: 90vw;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.map-container svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.dept { 
+  cursor: pointer;
+}
+
+.dept-fill { fill: var(--dept-fill); transition: fill 0.15s; }
+.dept:hover .dept-fill { fill: var(--dept-hover); }
+.dept.is-selected .dept-fill { fill: var(--dept-selected); }
+
+/* inverse border: white = keep, black stroke straddling the edge = cut away */
+.mask-shape { fill: white; }
+.mask-edge {
+  fill: none;
+  stroke: black;
+  stroke-width: calc(var(--dept-gap) * 2);
+  stroke-linejoin: round;
+}

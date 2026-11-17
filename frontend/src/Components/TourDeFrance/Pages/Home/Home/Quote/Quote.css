@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lexend+Peta:wght@100..900&family=SUSE:ital,wght@0,100..900;1,100..900&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Tiro+Gurmukhi&display=swap');
+
+.font-quote {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-quote-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.font-tiro {
+  font-family: "Tiro Gurmukhi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quote-box {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5vw;
+}
+
+.cdg-quote {
+  font-size: 4.5vw;
+
+  text-align: center;
+  color: var(--tdf-text-color);
+
+  text-shadow: 0px 5px 5px #000000aa;
+  transition: text-shadow 0.5s ease;
+}
+
+.quote-box:hover .cdg-quote {
+  text-shadow: 0px 5px 15px #000000;
+}
+
+.quotes {
+  font-size: 16vw;
+  color: #c9d6e277;
+
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.quote-credit {
+  font-size: 2vw;
+  text-align: center;
+  color: var(--tdf-text-color);
+  opacity: 85%;
+
+  margin-top: 50px;
+}
+
+
+
+
+
+
+.spectral-sc-extralight {
+  font-family: "Spectral SC", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.spectral-sc-light {
+  font-family: "Spectral SC", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.spectral-sc-regular {
+  font-family: "Spectral SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.spectral-sc-medium {
+  font-family: "Spectral SC", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.spectral-sc-semibold {
+  font-family: "Spectral SC", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.spectral-sc-bold {
+  font-family: "Spectral SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.spectral-sc-extrabold {
+  font-family: "Spectral SC", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.spectral-sc-extralight-italic {
+  font-family: "Spectral SC", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.spectral-sc-light-italic {
+  font-family: "Spectral SC", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.spectral-sc-regular-italic {
+  font-family: "Spectral SC", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.spectral-sc-medium-italic {
+  font-family: "Spectral SC", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.spectral-sc-semibold-italic {
+  font-family: "Spectral SC", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.spectral-sc-bold-italic {
+  font-family: "Spectral SC", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.spectral-sc-extrabold-italic {
+  font-family: "Spectral SC", serif;
+  font-weight: 800;
+  font-style: italic;
+}

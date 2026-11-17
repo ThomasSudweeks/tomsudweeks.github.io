@@ -41,7 +41,7 @@ function Header() {
       {/* Left-aligned PoM logo */}
       <div className='title-box no-select' onClick={redirectToHome} >
         <h1>P</h1>
-        <img src='/pom-title.svg' className='header-title' alt="Title" />
+        <img src='/pom/pom-title.svg' className='header-title' alt="Title" />
         <h1>M</h1>
       </div>
 

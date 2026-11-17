@@ -1,0 +1,48 @@
+
+.photos-bg {
+  /* fixed: color-mix needs a color space as its first argument */
+  background-color: color-mix(in srgb, var(--tdf-bg-color) 80%, rgb(0, 0, 0) 20%);
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  z-index: -1;
+}
+
+/* The white frame sitting on the blue background */
+.photos-frame {
+  background: var(--tdf-popup-bg);
+  width: min(1400px, 92%);
+  margin: 6rem auto 3rem; /* top margin: adjust to clear your Header */
+  padding: 1.5rem;
+  border-radius: 34px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Pinterest-style columns */
+.photos-grid {
+  column-count: 2;
+  column-gap: 1.5rem;
+}
+
+.photos-item {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+  break-inside: avoid;
+  border-radius: 16px;
+}
+
+@media (min-width: 1800px) {
+  .photos-grid { column-count: 3; }
+}
+
+@media (max-width: 700px) {
+  .photos-grid { column-count: 1; }
+  .photos-frame { padding: 0.75rem; }
+}

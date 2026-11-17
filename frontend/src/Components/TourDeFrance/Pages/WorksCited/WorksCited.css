@@ -1,0 +1,56 @@
+.works-cited-bg {
+  background-color: color-mix(var(--tdf-bg-color) 80%, rgb(0, 0, 0) 20%);
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  z-index: -1;
+}
+
+.works-cited {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 0 100px;
+  color: var(--tdf-text-color);
+  font-family: 'Inter', sans-serif;
+}
+
+.works-cited h2 {
+  padding-top: 100px;
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 40px;
+  
+  color: var(--tdf-text-color);
+  opacity: 100%;
+}
+
+.works-cited ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.works-cited li {
+  padding-left: 2em;
+  text-indent: -2em;
+  margin-bottom: 18px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.works-cited a {
+  color: var(--tdf-text-color);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+  text-underline-offset: 3px;
+}
+
+.works-cited a:hover {
+  color: var(--tdf-text-accent-color);
+}

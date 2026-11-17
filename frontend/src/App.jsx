@@ -10,19 +10,29 @@ import Setup from './Components/Pom/Setup/Setup'
 import About from './Components/Pom/About/About'
 import Logo from './Components/Pom/Logo/Logo'
 
+import TourHome       from './Components/TourDeFrance/Pages/Home/TourHome'
+import TourWorksCited from './Components/TourDeFrance/Pages/WorksCited/WorksCited'
+import TourPhotos     from './Components/TourDeFrance/Pages/Photos/TourPhotos'
+
 const App = () => {
   return (
     <Router>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="pom" element={<Pom />} />
-        <Route path="pom/shop" element={<Shop />} />
-        <Route path="pom/setup" element={<Setup />} />
-        <Route path="pom/about" element={<About />} />
-        <Route path="pom/logo" element={<Logo />} />
-        <Route path="other" element={<Pom />} />
-        <Route path="*" element={<Error />} />
+        <Route path="/"           element={ <Home /> } />
+
+        <Route path="tdf"         element={ <TourHome /> }       />
+        <Route path="tdf/maps"    element={ <TourHome /> }       />
+        <Route path="tdf/photos"  element={ <TourPhotos /> } />
+        <Route path="tdf/sources" element={ <TourWorksCited /> } />
+
+        <Route path="pom"         element={ <Pom /> }   />
+        <Route path="pom/shop"    element={ <Shop /> }  />
+        <Route path="pom/setup"   element={ <Setup /> } />
+        <Route path="pom/about"   element={ <About /> } />
+        <Route path="pom/logo"    element={ <Logo /> }  />
+        
+        <Route path="*"           element={ <Error /> } />
       </Routes>
     </Router>
   )

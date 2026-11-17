@@ -1,11 +1,46 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
+  /* padding: 2rem; */
   margin: 100 auto;
-  padding: 2rem;
   text-align: left;
 }
 
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+}
+
+:root {
+  --tdf-bg-color: rgb(20, 0, 80);
+  --tdf-header-color: rgba(30, 10, 120, 0.9);
+  --tdf-header-hover-color: rgba(105, 214, 226, 0.09);
+
+  --tdf-text-color: #c9d6e2;
+  --tdf-text-accent-color: #8c90cb;
+
+  --tdf-popup-bg: #ffffff;
+  --tdf-popup-text: #1c1c1e;
+}
+
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(201, 214, 226, 0.5) transparent;
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgba(201, 214, 226, 0.5);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 214, 226, 0.8);
 }
